@@ -50,7 +50,30 @@ public class ClienteHan extends javax.swing.JFrame {
         enviarCadastro = new javax.swing.JButton();
         saldousuario = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
+        nomeusuarioantigo = new javax.swing.JTextField();
+        nomeusuarionovo = new javax.swing.JTextField();
+        senhausuarioantigo = new javax.swing.JTextField();
+        senhausuarionovo = new javax.swing.JTextField();
+        enviarAlteracao = new javax.swing.JButton();
         nomeusuario4 = new javax.swing.JTextField();
+        senhausuario2 = new javax.swing.JTextField();
+        consultarUsuario = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -76,6 +99,12 @@ public class ClienteHan extends javax.swing.JFrame {
         jLabel1.setText("Saldo");
 
         jLabel2.setText("Deposito");
+
+        nomeusuario1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nomeusuario1ActionPerformed(evt);
+            }
+        });
 
         enviardeposito.setText("Enviar");
         enviardeposito.addActionListener(new java.awt.event.ActionListener() {
@@ -104,111 +133,281 @@ public class ClienteHan extends javax.swing.JFrame {
 
         jLabel5.setText("Alterar Cadastro");
 
-        nomeusuario4.addActionListener(new java.awt.event.ActionListener() {
+        nomeusuarioantigo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nomeusuario4ActionPerformed(evt);
+                nomeusuarioantigoActionPerformed(evt);
             }
         });
+
+        enviarAlteracao.setText("Enviar");
+        enviarAlteracao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enviarAlteracaoActionPerformed(evt);
+            }
+        });
+
+        consultarUsuario.setText("Consultar");
+        consultarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                consultarUsuarioActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setText("Consultar Usuario");
+
+        jLabel7.setText("Nome");
+
+        jLabel8.setText("Senha");
+
+        jLabel9.setText("Valor");
+
+        jLabel10.setText("Conta");
+
+        jLabel11.setText("Valor");
+
+        jLabel12.setText("Conta");
+
+        jLabel13.setText("Nome");
+
+        jLabel14.setText("Senha");
+
+        jLabel15.setText("Saldo");
+
+        jLabel16.setText("Nome Atual");
+
+        jLabel17.setText("Novo Nome");
+
+        jLabel18.setText("Senha Atual");
+
+        jLabel19.setText("Nova Senha");
+
+        jLabel20.setText("Nome");
+
+        jLabel21.setText("Senha");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(enviardeposito, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(nomeusuario1, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(29, 29, 29)
-                                .addComponent(jLabel1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(10, 10, 10)
-                                        .addComponent(jLabel2))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(senhausuario)
-                                        .addComponent(verificarsaldo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(nomeusuario))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(valordeposito))))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(valorsaque))
+                        .addGap(40, 40, 40)
+                        .addComponent(jLabel1)
+                        .addGap(158, 158, 158)
+                        .addComponent(jLabel4))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(nomeusuario2))
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(nomeusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(124, 124, 124)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel13)
+                            .addComponent(nomeusuario3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addComponent(valordeposito, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(124, 124, 124)
+                        .addComponent(enviarCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10)
+                            .addComponent(nomeusuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(124, 124, 124)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(enviardeposito, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(25, 25, 25)
+                                .addComponent(jLabel3)))
+                        .addGap(124, 124, 124)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel16)
+                            .addComponent(nomeusuarioantigo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel11)
+                        .addGap(190, 190, 190)
+                        .addComponent(jLabel17))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(valorsaque, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(124, 124, 124)
+                        .addComponent(nomeusuarionovo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel12)
+                        .addGap(185, 185, 185)
+                        .addComponent(jLabel18))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(nomeusuario2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(enviarsaque, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(124, 124, 124)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(senhausuarioantigo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel19)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel6)
+                        .addGap(129, 129, 129)
+                        .addComponent(senhausuarionovo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(jLabel20)
+                        .addGap(182, 182, 182)
+                        .addComponent(enviarAlteracao, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(nomeusuario4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(jLabel21))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(senhausuario2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(consultarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(jLabel3))
+                                .addGap(10, 10, 10)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel8)
+                                    .addComponent(senhausuario, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(verificarsaldo, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(enviarsaque)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(101, 101, 101)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(saldousuario, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(nomeusuario3, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(senhausuario1, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(enviarCadastro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(nomeusuario4, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(167, 167, 167))
+                                .addGap(30, 30, 30)
+                                .addComponent(jLabel2)))
+                        .addGap(124, 124, 124)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel14)
+                            .addComponent(senhausuario1, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
+                            .addComponent(jLabel15)
+                            .addComponent(saldousuario))))
+                .addGap(117, 117, 117))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nomeusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nomeusuario3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(senhausuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(senhausuario1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(verificarsaldo)
-                    .addComponent(saldousuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(enviarCadastro))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(2, 2, 2)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(valordeposito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(nomeusuario1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(100, 100, 100)
+                        .addComponent(jLabel7)
+                        .addGap(2, 2, 2)
+                        .addComponent(nomeusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel13)
+                        .addGap(6, 6, 6)
+                        .addComponent(nomeusuario3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(2, 2, 2)
+                        .addComponent(senhausuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(verificarsaldo))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel14)
+                        .addGap(6, 6, 6)
+                        .addComponent(senhausuario1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel15)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(jLabel2))
+                    .addComponent(saldousuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8, 8, 8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addGap(6, 6, 6)
+                        .addComponent(valordeposito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(enviarCadastro)))
+                .addGap(2, 2, 2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jLabel10)
+                        .addGap(1, 1, 1)
+                        .addComponent(nomeusuario1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(4, 4, 4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
                         .addComponent(enviardeposito)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(valorsaque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel16)
+                        .addGap(6, 6, 6)
+                        .addComponent(nomeusuarioantigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(1, 1, 1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(5, 5, 5)
+                        .addComponent(jLabel11))
+                    .addComponent(jLabel17))
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(valorsaque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nomeusuarionovo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(4, 4, 4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel18)))
+                .addGap(4, 4, 4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(nomeusuario2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(6, 6, 6)
                         .addComponent(enviarsaque))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(nomeusuario4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(161, Short.MAX_VALUE))
+                        .addGap(7, 7, 7)
+                        .addComponent(senhausuarioantigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addComponent(jLabel19)))
+                .addGap(9, 9, 9)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel6))
+                    .addComponent(senhausuarionovo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel20))
+                    .addComponent(enviarAlteracao))
+                .addGap(6, 6, 6)
+                .addComponent(nomeusuario4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addComponent(jLabel21)
+                .addGap(4, 4, 4)
+                .addComponent(senhausuario2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addComponent(consultarUsuario))
         );
 
         pack();
@@ -223,27 +422,37 @@ public class ClienteHan extends javax.swing.JFrame {
     }//GEN-LAST:event_senhausuarioActionPerformed
 
     private void verificarsaldoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verificarsaldoActionPerformed
-                double teste = 0;
-                String nomeusuario, senhausuario;
-                nomeusuario = this.nomeusuario.getText();
-                senhausuario = this.senhausuario.getText();
-                teste = saldoUser(nomeusuario, senhausuario);
-        JOptionPane.showMessageDialog(null, "Saldo: R$ " + teste);
-        System.out.println(saldoUser(nomeusuario,senhausuario));
+        double teste = 0;
+        teste = saldoUser(this.nomeusuario.getText(), this.senhausuario.getText());
+        if(teste == 0.0){
+            JOptionPane.showMessageDialog(null, "Conta não cadastrada ou senha incorreta");
+        }else{
+            JOptionPane.showMessageDialog(null, "Saldo: R$ " + teste);
+        }
     }//GEN-LAST:event_verificarsaldoActionPerformed
 
     private void enviardepositoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enviardepositoActionPerformed
             boolean teste = false;
             double valorDeposito = Double.parseDouble(this.valordeposito.getText());
             teste = deposito(valorDeposito, this.nomeusuario1.getText());
-            JOptionPane.showMessageDialog(null, "Deposito realizado com sucesso");
+            if(teste == true){
+            JOptionPane.showMessageDialog(null, "Valor insuficiente ou Conta não cadastrada");   
+            }
+            else{
+            JOptionPane.showMessageDialog(null, "Deposito realizado com sucesso");        
+                    }
     }//GEN-LAST:event_enviardepositoActionPerformed
 
     private void enviarsaqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enviarsaqueActionPerformed
-        boolean teste = false;
+        boolean teste;
         double valorSaque = Double.parseDouble(this.valorsaque.getText());
-        teste = saque(valorSaque, this.nomeusuario2.getText());
-        JOptionPane.showMessageDialog(null, "Saque realizado com sucesso");
+        teste = saque(valorSaque, this.nomeusuario2.getText());        
+        if(teste == true){
+            JOptionPane.showMessageDialog(null, "Valor insuficiente ou Conta não cadastrada");   
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Saque realizado com sucesso");        
+        }
     }//GEN-LAST:event_enviarsaqueActionPerformed
 
     private void enviarCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enviarCadastroActionPerformed
@@ -252,9 +461,25 @@ public class ClienteHan extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso");
     }//GEN-LAST:event_enviarCadastroActionPerformed
 
-    private void nomeusuario4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeusuario4ActionPerformed
+    private void nomeusuarioantigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeusuarioantigoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_nomeusuario4ActionPerformed
+    }//GEN-LAST:event_nomeusuarioantigoActionPerformed
+
+    private void enviarAlteracaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enviarAlteracaoActionPerformed
+        boolean teste = false;
+        teste = alterCadastro(this.nomeusuarioantigo.getText(), this.nomeusuarionovo.getText(), this.senhausuarioantigo.getText(), this.senhausuarionovo.getText());
+        JOptionPane.showMessageDialog(null, "Alteracao realizada com sucesso");
+    }//GEN-LAST:event_enviarAlteracaoActionPerformed
+
+    private void consultarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarUsuarioActionPerformed
+        String teste = "";
+        teste = consultUser(this.nomeusuario4.getText(), this.senhausuario2.getText());
+        JOptionPane.showMessageDialog(null, "Dados do usuario " + teste);
+    }//GEN-LAST:event_consultarUsuarioActionPerformed
+
+    private void nomeusuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeusuario1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nomeusuario1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -294,22 +519,45 @@ public class ClienteHan extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton consultarUsuario;
+    private javax.swing.JButton enviarAlteracao;
     private javax.swing.JButton enviarCadastro;
     private javax.swing.JButton enviardeposito;
     private javax.swing.JButton enviarsaque;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField nomeusuario;
     private javax.swing.JTextField nomeusuario1;
     private javax.swing.JTextField nomeusuario2;
     private javax.swing.JTextField nomeusuario3;
     private javax.swing.JTextField nomeusuario4;
+    private javax.swing.JTextField nomeusuarioantigo;
+    private javax.swing.JTextField nomeusuarionovo;
     private javax.swing.JTextField saldousuario;
     private javax.swing.JTextField senhausuario;
     private javax.swing.JTextField senhausuario1;
+    private javax.swing.JTextField senhausuario2;
+    private javax.swing.JTextField senhausuarioantigo;
+    private javax.swing.JTextField senhausuarionovo;
     private javax.swing.JTextField valordeposito;
     private javax.swing.JTextField valorsaque;
     private javax.swing.JButton verificarsaldo;
